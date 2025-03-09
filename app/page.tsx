@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Loader2 } from "lucide-react"
+import Image from 'next/image'
 
 interface Tag {
   tag: string
@@ -91,10 +92,17 @@ export default function ArticleFetcher() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 bg-gray-50">
+    <div className="flex flex-col items-center justify-start min-h-screen p-4 bg-gray-50">
+      <div className="mb-4">
+        <img
+          src="https://play-lh.googleusercontent.com/DZu20eDTCw7UcOC3a7gM5ozILHa6i5sMKDt8YVvMv-ZzlBqPzp_D9CjwGU_AyDUlw-nt=w3840-h2160-rw"
+          alt="Taboola News"
+          className="w-full max-w-xs mx-auto"
+        />
+      </div>
       <Card className="w-full max-w-3xl">
         <CardHeader>
-          <CardTitle>Article Fetcher & Tag Generator</CardTitle>
+          <CardTitle>Taboola News - GenAI Keywords engine</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
